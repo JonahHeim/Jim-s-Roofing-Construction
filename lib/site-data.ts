@@ -4,10 +4,15 @@ export type LinkItem = {
 };
 
 export const companyName = "Jim's Roofing & Construction";
+export const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://jims-roofing-construction.vercel.app";
+export const siteDescription =
+  "Roofing-first protection for homeowners in Pinckney and surrounding communities, backed by local accountability, recognized credentials, and a clear next step.";
 
 export const contactInfo = {
   phoneDisplay: "888-301-6335",
   phoneHref: "tel:8883016335",
+  phonePlain: "888-301-6335",
   email: "jimpurdy@charter.net",
   addressLine1: "550 Rush Lake Rd",
   addressLine2: "Pinckney, MI 48169-8530",
@@ -105,6 +110,7 @@ export const processSteps = [
 export const reviewSummary = {
   rating: "5.0",
   count: "5 ratings",
+  countValue: 5,
   highlights: [
     "Local homeowners already point to the company for responsive communication and dependable service.",
     "The current linked review profile shows a 5.0 out of 5 rating, which gives the rebuild a strong trust anchor.",
@@ -123,6 +129,58 @@ export const serviceAreas = [
   "Livingston County",
   "Washtenaw County"
 ];
+
+export const seoKeywordMap = {
+  "/": [
+    "Pinckney roofing contractor",
+    "GAF Master Elite Pinckney",
+    "roof repair Pinckney MI",
+    "roof replacement Pinckney MI"
+  ],
+  "/roofing": [
+    "roofing Pinckney MI",
+    "roof repair Pinckney MI",
+    "roof replacement Pinckney MI",
+    "storm damage roofing Pinckney"
+  ],
+  "/siding": [
+    "siding contractor Pinckney MI",
+    "siding replacement Pinckney MI",
+    "home siding Pinckney"
+  ],
+  "/tree-removal": [
+    "tree removal Pinckney MI",
+    "hazard tree removal Pinckney",
+    "storm damaged tree removal Pinckney"
+  ],
+  "/additions": [
+    "home additions Pinckney MI",
+    "room additions Pinckney",
+    "home improvement contractor Pinckney"
+  ],
+  "/kitchen-remodeling": [
+    "kitchen remodeling Pinckney MI",
+    "kitchen remodel contractor Pinckney"
+  ],
+  "/bathroom-remodeling": [
+    "bathroom remodeling Pinckney MI",
+    "bathroom remodel contractor Pinckney"
+  ],
+  "/crane-service": [
+    "crane service Pinckney MI",
+    "lifting support contractor Pinckney"
+  ],
+  "/service-area": [
+    "roofing contractor Livingston County",
+    "roofing contractor Washtenaw County",
+    "Pinckney contractor service area"
+  ],
+  "/contact": [
+    "contact Jim's Roofing & Construction",
+    "Pinckney roofing estimate",
+    "roofing quote Pinckney MI"
+  ]
+} satisfies Record<string, string[]>;
 
 export const homeFaqs = [
   {

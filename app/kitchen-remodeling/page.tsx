@@ -4,11 +4,13 @@ import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceHero } from "@/components/service-hero";
 import { contactInfo } from "@/lib/site-data";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Kitchen Remodeling",
-  description: "Kitchen remodeling planning and consultation from Jim's Roofing & Construction."
-};
+  description: "Kitchen remodeling planning and consultation from Jim's Roofing & Construction.",
+  path: "/kitchen-remodeling"
+});
 
 export default function KitchenRemodelingPage() {
   return (

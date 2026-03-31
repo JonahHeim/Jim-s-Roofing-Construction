@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#000033"/>
+  <rect width="1200" height="630" fill="url(#paint0_linear)"/>
+  <circle cx="1000" cy="120" r="180" fill="#EAC336" fill-opacity="0.18"/>
+  <path d="M80 478L270 306L457 420L643 220L839 360L1118 132" stroke="#B2C9EF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M80 494L270 322L457 436L643 236L839 376L1118 148" stroke="#EAC336" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 16"/>
+  <rect x="80" y="72" width="242" height="42" rx="21" fill="white" fill-opacity="0.08"/>
+  <rect x="338" y="72" width="208" height="42" rx="21" fill="white" fill-opacity="0.08"/>
+  <rect x="562" y="72" width="178" height="42" rx="21" fill="white" fill-opacity="0.08"/>
+  <text x="106" y="99" fill="#FFFFFF" fill-opacity="0.82" font-family="Arial, sans-serif" font-size="20">GAF Master Elite</text>
+  <text x="364" y="99" fill="#FFFFFF" fill-opacity="0.82" font-family="Arial, sans-serif" font-size="20">Licensed &amp; insured</text>
+  <text x="588" y="99" fill="#FFFFFF" fill-opacity="0.82" font-family="Arial, sans-serif" font-size="20">20+ years local</text>
+  <text x="80" y="280" fill="white" font-family="Arial, sans-serif" font-size="76" font-weight="700">Jim's Roofing &amp;</text>
+  <text x="80" y="360" fill="white" font-family="Arial, sans-serif" font-size="76" font-weight="700">Construction</text>
+  <text x="80" y="430" fill="#DDE6F4" font-family="Arial, sans-serif" font-size="32">Roofing-first protection for homeowners in Pinckney and nearby communities.</text>
+  <rect x="80" y="500" width="250" height="52" rx="26" fill="#EAC336"/>
+  <text x="120" y="534" fill="#000033" font-family="Arial, sans-serif" font-size="24" font-weight="700">Request a free estimate</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000033"/>
+      <stop offset="0.6" stop-color="#27324D"/>
+      <stop offset="1" stop-color="#3A5478"/>
+    </linearGradient>
+  </defs>
+</svg>

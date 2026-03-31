@@ -3,11 +3,13 @@ import { Container } from "@/components/container";
 import { EstimateForm } from "@/components/estimate-form";
 import { SectionHeading } from "@/components/section-heading";
 import { contactInfo, serviceAreas } from "@/lib/site-data";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Contact",
-  description: "Contact Jim's Roofing & Construction for roofing, siding, tree removal, and remodeling help."
-};
+  description: "Contact Jim's Roofing & Construction for roofing, siding, tree removal, and remodeling help.",
+  path: "/contact"
+});
 
 export default function ContactPage() {
   return (

@@ -3,7 +3,9 @@ import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
 import { FAQAccordion } from "@/components/faq-accordion";
 import { SectionHeading } from "@/components/section-heading";
+import { createPageMetadata } from "@/lib/seo";
 import {
+  companyName,
   contactInfo,
   homeFaqs,
   homeServiceCards,
@@ -14,14 +16,36 @@ import {
 } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Roofing-First Protection for Pinckney Homeowners",
-  description:
-    "GAF Master Elite roofing, siding, tree removal, and remodeling help for Pinckney and surrounding communities."
+  ...createPageMetadata({
+    title: "Roofing-First Protection for Pinckney Homeowners",
+    description:
+      "GAF Master Elite roofing, siding, tree removal, and remodeling help for Pinckney and surrounding communities.",
+    path: "/"
+  })
 };
 
 export default function HomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: homeFaqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  };
+
   return (
     <>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+        type="application/ld+json"
+      />
       <section className="hero-surface overflow-hidden py-20 text-white lg:py-28">
         <Container className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
           <div className="space-y-8">
@@ -67,7 +91,7 @@ export default function HomePage() {
                   <p className="eyebrow text-white/45">Credential</p>
                   <p className="mt-3 font-display text-3xl uppercase leading-none text-white">GAF Master Elite</p>
                   <p className="mt-3 text-sm leading-6 text-white/70">
-                    Roofing authority that helps this site feel more specific and more trustworthy than a generic
+                    Roofing authority that helps {companyName} feel more specific and more trustworthy than a generic
                     contractor page.
                   </p>
                 </div>

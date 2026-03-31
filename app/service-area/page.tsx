@@ -5,15 +5,36 @@ import { FAQAccordion } from "@/components/faq-accordion";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceHero } from "@/components/service-hero";
 import { contactInfo, serviceAreaFaqs, serviceAreas } from "@/lib/site-data";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Service Area",
-  description: "See if Jim's Roofing & Construction serves your part of the Pinckney area."
-};
+  description: "See if Jim's Roofing & Construction serves your part of the Pinckney area.",
+  path: "/service-area"
+});
 
 export default function ServiceAreaPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: serviceAreaFaqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  };
+
   return (
     <>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+        type="application/ld+json"
+      />
       <ServiceHero
         bullets={serviceAreas.slice(0, 4)}
         description="We proudly serve homeowners in Pinckney and surrounding communities with roofing, exterior work, and select home-improvement services."

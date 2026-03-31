@@ -4,11 +4,13 @@ import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceHero } from "@/components/service-hero";
 import { contactInfo } from "@/lib/site-data";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Crane Service",
-  description: "Crane-service inquiries for projects that require lifting support and coordination."
-};
+  description: "Crane-service inquiries for projects that require lifting support and coordination.",
+  path: "/crane-service"
+});
 
 export default function CraneServicePage() {
   return (

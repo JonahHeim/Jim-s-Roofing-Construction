@@ -5,16 +5,37 @@ import { FAQAccordion } from "@/components/faq-accordion";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceHero } from "@/components/service-hero";
 import { contactInfo, roofingFaqs } from "@/lib/site-data";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Roofing",
   description:
-    "Roof replacement, repair, storm-damage response, and inspections from Jim's Roofing & Construction."
-};
+    "Roof replacement, repair, storm-damage response, and inspections from Jim's Roofing & Construction.",
+  path: "/roofing"
+});
 
 export default function RoofingPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: roofingFaqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  };
+
   return (
     <>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+        type="application/ld+json"
+      />
       <ServiceHero
         bullets={["Roof replacement", "Roof repair", "Storm-damage response", "Roof inspections"]}
         description="When the roof is the problem, you need a contractor who can inspect it honestly, explain the right fix, and complete the work with care."

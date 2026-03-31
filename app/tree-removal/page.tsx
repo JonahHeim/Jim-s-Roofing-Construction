@@ -4,11 +4,13 @@ import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceHero } from "@/components/service-hero";
 import { contactInfo } from "@/lib/site-data";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Tree Removal",
-  description: "Safety-first tree removal support from Jim's Roofing & Construction."
-};
+  description: "Safety-first tree removal support from Jim's Roofing & Construction.",
+  path: "/tree-removal"
+});
 
 export default function TreeRemovalPage() {
   return (
