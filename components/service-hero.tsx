@@ -42,7 +42,7 @@ export function ServiceHero({
         </div>
 
         <div className="surface-dark rounded-hero border border-white/10 p-6 shadow-strong">
-          <p className="eyebrow text-white/55">What this page covers</p>
+          <p className="eyebrow text-white/55">On this page</p>
           <ul className="mt-4 space-y-4">
             {bullets.map((bullet) => (
               <li className="flex gap-3" key={bullet}>

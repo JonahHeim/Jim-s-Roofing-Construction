@@ -17,21 +17,21 @@ export default function AdditionsPage() {
     <>
       <ServiceHero
         bullets={["Space planning", "Functional improvements", "Clear consultation path"]}
-        description="When your home needs more room, better flow, or a smarter layout, start with a conversation about what would make the space work better every day."
+        description="Add space, improve flow, and plan the right next step for your home."
         eyebrow="Additions"
         primaryCta="Start your additions conversation"
         primaryHref="/contact"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
-        title="Add the Space and Function Your Home Is Missing"
+        title="Add Space That Fits the Way You Live"
       />
 
       <section className="section-space">
         <Container className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <SectionHeading
-            description="Use this page to frame additions as a thoughtful upgrade, not a vague promise that the company does everything."
+            description="Projects that make the home work better."
             eyebrow="Project fit"
-            title="A Good Additions Page Helps the Homeowner See Whether the Project Is a Fit"
+            title="What We Help With"
           />
           <div className="grid gap-4">
             {[
@@ -51,9 +51,9 @@ export default function AdditionsPage() {
         <Container>
           <div className="surface-dark rounded-panel p-7 text-white">
             <p className="eyebrow text-white/45">Additions CTA</p>
-            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92]">Start With a Conversation About What Your Home Needs Next</h2>
+            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92]">Talk Through Your Project</h2>
             <p className="mt-5 max-w-2xl text-base leading-7 text-white/75">
-              We will talk through your goals, the scope, and the right path forward for the project.
+              We will help you decide on the right next step.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/contact">Start your additions conversation</ButtonLink>

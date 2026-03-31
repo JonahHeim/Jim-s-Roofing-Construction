@@ -17,21 +17,21 @@ export default function SidingPage() {
     <>
       <ServiceHero
         bullets={["Improved curb appeal", "Better weather protection", "Potential energy-efficiency gains"]}
-        description="New siding can improve appearance, improve weather protection, and help the home feel finished again."
+        description="New siding that improves appearance, protection, and efficiency."
         eyebrow="Siding"
         primaryCta="Schedule a siding consultation"
         primaryHref="/contact"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
-        title="Upgrade Curb Appeal and Protection With New Siding"
+        title="Siding That Looks Better and Protects Better"
       />
 
       <section className="section-space">
         <Container className="space-y-10">
           <SectionHeading
-            description="Siding is not just cosmetic. It changes how the home performs and how it feels to come home to it."
+            description="Siding should improve both looks and performance."
             eyebrow="Benefits"
-            title="Make the Upgrade Feel Practical as Well as Visual"
+            title="Why Replace Siding"
           />
           <div className="grid gap-5 md:grid-cols-3">
             {[
@@ -51,9 +51,7 @@ export default function SidingPage() {
         <Container className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
           <div className="surface-panel p-7">
             <p className="eyebrow">Scope</p>
-            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92] text-navy">
-              A Clearer Explanation of What This Service Actually Covers
-            </h2>
+            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92] text-navy">What We Help With</h2>
             <ul className="mt-6 space-y-4 text-base leading-7 text-muted">
               {["Siding replacement", "Material guidance", "Project walkthrough and estimate", "Clear expectations on next steps"].map(
                 (item) => (
@@ -67,11 +65,9 @@ export default function SidingPage() {
           </div>
           <div className="surface-dark rounded-panel p-7 text-white">
             <p className="eyebrow text-white/45">Siding CTA</p>
-            <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92]">
-              Start With a Consultation and a Clear Idea of What Your Home Needs
-            </h3>
+            <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92]">Schedule a Siding Consultation</h3>
             <p className="mt-5 text-base leading-7 text-white/75">
-              If the siding is worn, dated, or underperforming, let us help you plan the right upgrade.
+              Tell us what you want to update and we will talk through the next step.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/contact">Schedule a siding consultation</ButtonLink>

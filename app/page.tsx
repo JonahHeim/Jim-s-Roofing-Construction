@@ -49,19 +49,14 @@ export default function HomePage() {
       <section className="hero-surface overflow-hidden py-20 text-white lg:py-28">
         <Container className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
           <div className="space-y-8">
-            <p className="eyebrow text-white/60">Roofing-first authority for Pinckney homes</p>
+            <p className="eyebrow text-white/60">GAF Master Elite roofing in Pinckney</p>
             <div className="space-y-5">
               <h1 className="max-w-4xl font-display text-5xl uppercase leading-[0.88] sm:text-6xl lg:text-7xl">
-                Roofing-First Protection From a GAF Master Elite Team Serving Pinckney and Nearby Communities
+                Trusted Roofing for Pinckney Homes
               </h1>
               <p className="max-w-2xl text-base leading-7 text-white/78 sm:text-lg">
-                Jim&apos;s Roofing &amp; Construction helps local homeowners move forward with confidence through licensed,
-                insured roofing, siding, tree removal, and select home-improvement work backed by more than 20 years of
-                local experience.
-              </p>
-              <p className="max-w-2xl text-base leading-7 text-white/65">
-                When the work matters, the first call should give you clarity. We inspect the situation, explain the
-                right next step, and help you protect the home without the usual contractor guesswork.
+                Jim&apos;s Roofing &amp; Construction provides roofing, siding, tree removal, and remodeling help backed by
+                GAF Master Elite credentials, 20+ years of local experience, and straightforward service.
               </p>
             </div>
 
@@ -90,17 +85,12 @@ export default function HomePage() {
                 <div className="rounded-card border border-white/10 bg-white/5 p-5">
                   <p className="eyebrow text-white/45">Credential</p>
                   <p className="mt-3 font-display text-3xl uppercase leading-none text-white">GAF Master Elite</p>
-                  <p className="mt-3 text-sm leading-6 text-white/70">
-                    Roofing authority that helps {companyName} feel more specific and more trustworthy than a generic
-                    contractor page.
-                  </p>
+                  <p className="mt-3 text-sm leading-6 text-white/70">Recognized roofing credentials you can verify.</p>
                 </div>
                 <div className="rounded-card border border-white/10 bg-white/5 p-5">
                   <p className="eyebrow text-white/45">Local proof</p>
                   <p className="mt-3 font-display text-3xl uppercase leading-none text-white">20+ Years</p>
-                  <p className="mt-3 text-sm leading-6 text-white/70">
-                    Serving Pinckney and nearby Michigan communities with work that needs to be done the right way.
-                  </p>
+                  <p className="mt-3 text-sm leading-6 text-white/70">Serving Pinckney and nearby communities.</p>
                 </div>
               </div>
 
@@ -117,8 +107,7 @@ export default function HomePage() {
                   </a>
                 </div>
                 <p className="mt-3 text-sm leading-6 text-white/72">
-                  The linked review profile currently shows {reviewSummary.count}, giving the rebuild a strong trust
-                  anchor without forcing visitors to guess at the company&apos;s reputation.
+                  The linked review profile currently shows {reviewSummary.count}.
                 </p>
               </div>
             </div>
@@ -129,9 +118,9 @@ export default function HomePage() {
       <section className="section-space">
         <Container className="space-y-10">
           <SectionHeading
-            description="Homeowners want more than a promise. They want credentials, local accountability, and a contractor who can explain the job clearly before work begins."
+            description="The basics matter: real credentials, local experience, and clear communication."
             eyebrow="Trust badge strip"
-            title="Proof That Should Matter Before You Hire Anyone"
+            title="Why Homeowners Call Us"
           />
           <div className="grid gap-4 md:grid-cols-4">
             {[
@@ -152,9 +141,9 @@ export default function HomePage() {
       <section className="section-space bg-background-soft">
         <Container className="space-y-10">
           <SectionHeading
-            description="Roofing leads the story, but we also help with siding, tree removal, additions, remodeling, and crane-service needs when the project calls for one reliable local team."
+            description="Roofing comes first, with additional services when the project needs them."
             eyebrow="Primary services"
-            title="Focused Services for the Parts of Your Property You Cannot Afford to Ignore"
+            title="Services"
           />
 
           <div className="grid gap-5 lg:grid-cols-2">
@@ -187,13 +176,9 @@ export default function HomePage() {
         <Container className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <div className="surface-dark rounded-panel p-7 text-white shadow-strong">
             <p className="eyebrow text-white/45">Why choose us</p>
-            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.9]">
-              Credentials Matter, but Homeowners Feel the Difference in How the Job Is Handled
-            </h2>
+            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.9]">Work With a Local Team You Can Trust</h2>
             <p className="mt-5 text-base leading-7 text-white/75">
-              We build trust by pairing recognized roofing credentials with practical homeowner care: honest
-              inspections, straightforward communication, careful cleanup, and work designed for Michigan weather and
-              real-life wear.
+              We combine roofing credentials with honest inspections, clear communication, and careful work.
             </p>
           </div>
 
@@ -216,9 +201,9 @@ export default function HomePage() {
       <section className="section-space bg-[color:rgba(221,230,244,0.35)]">
         <Container className="space-y-10">
           <SectionHeading
-            description="You should know what happens next from the first conversation through the final walkthrough. We keep the process simple so you are not left guessing about timing, scope, or communication."
+            description="You should know what happens next before the work starts."
             eyebrow="Process"
-            title="A Clear Process Keeps the Project Moving and Keeps You Informed"
+            title="Our Process"
           />
 
           <div className="grid gap-5 lg:grid-cols-4">
@@ -242,8 +227,7 @@ export default function HomePage() {
             </p>
             <p className="mt-2 text-base font-semibold text-foreground">{reviewSummary.count}</p>
             <p className="mt-4 text-base leading-7 text-muted">
-              Trust should be visible before a homeowner ever leaves the site. This rebuild surfaces the strongest proof
-              early and keeps the full review path one click away.
+              Check the latest reviews before you call.
             </p>
             <ButtonLink className="mt-6" href={contactInfo.reviewHref} variant="ghost">
               Read our reviews
@@ -262,9 +246,9 @@ export default function HomePage() {
       <section className="section-space bg-background-soft">
         <Container className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <SectionHeading
-            description="Local coverage matters when you need someone who knows the area, can show up when needed, and is close enough to stand behind the work."
+            description="Serving Pinckney and nearby communities."
             eyebrow="Service area"
-            title="Proudly Serving Pinckney and Nearby Communities"
+            title="Where We Work"
           />
           <div className="surface-panel p-6">
             <div className="flex flex-wrap gap-3">
@@ -285,20 +269,19 @@ export default function HomePage() {
         <Container className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
           <div className="space-y-6">
             <SectionHeading
-              description="The goal is simple: remove enough uncertainty that reaching out feels easy."
+              description="A few quick answers before you call."
               eyebrow="FAQ"
-              title="Quick Answers Before You Call"
+              title="Common Questions"
             />
             <FAQAccordion items={homeFaqs} />
           </div>
           <div className="surface-panel p-7">
             <p className="eyebrow">Need a clear next step?</p>
             <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92] text-navy">
-              Start With a Free Estimate and a Straightforward Conversation
+              Start With a Free Estimate
             </h3>
             <p className="mt-5 text-base leading-7 text-muted">
-              If you need help with roofing, siding, tree removal, or a home-improvement project, reach out and get a
-              clear next step from a trusted local team.
+              Tell us about the project and we will help you take the next step.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/contact">Request your free estimate</ButtonLink>

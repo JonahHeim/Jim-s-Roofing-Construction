@@ -17,21 +17,21 @@ export default function CraneServicePage() {
     <>
       <ServiceHero
         bullets={["Niche project support", "Clear job-fit conversation", "Direct local contact"]}
-        description="For projects that need crane support, start with a clear conversation about the job, the site, and what needs to happen next."
+        description="Crane support for projects that need the right equipment and coordination."
         eyebrow="Crane service"
         primaryCta="Ask about crane service"
         primaryHref="/contact"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
-        title="Get Crane Support for Projects That Need the Right Equipment and Coordination"
+        title="Crane Support for Specialized Jobs"
       />
 
       <section className="section-space">
         <Container className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <SectionHeading
-            description="Help visitors quickly decide whether their project belongs here."
+            description="A few common crane-service situations."
             eyebrow="Use cases"
-            title="Some Jobs Need More Than a Standard Crew and a Basic Setup"
+            title="When Crane Service Helps"
           />
           <div className="grid gap-4">
             {[
@@ -51,7 +51,7 @@ export default function CraneServicePage() {
         <Container>
           <div className="surface-dark rounded-panel p-7 text-white">
             <p className="eyebrow text-white/45">Crane CTA</p>
-            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92]">Tell Us About the Project and We Will Help You Determine the Right Next Step</h2>
+            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92]">Ask About Your Project</h2>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/contact">Ask about crane service</ButtonLink>
               <ButtonLink href={contactInfo.phoneHref} variant="secondary">

@@ -17,21 +17,21 @@ export default function BathroomRemodelingPage() {
     <>
       <ServiceHero
         bullets={["Comfort and usability", "Updated finishes", "Value-conscious improvements"]}
-        description="A bathroom remodel should improve comfort, function, and the way the home feels day after day."
+        description="Bathroom updates that improve comfort, function, and finish."
         eyebrow="Bathroom remodeling"
         primaryCta="Start your bathroom remodel"
         primaryHref="/contact"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
-        title="Upgrade the Bathroom Into a Space That Feels Better to Use"
+        title="Bathroom Remodeling That Feels Better to Use"
       />
 
       <section className="section-space">
         <Container className="space-y-10">
           <SectionHeading
-            description="Make the remodel feel practical, not indulgent."
+            description="The upgrades homeowners usually care about most."
             eyebrow="Bathroom outcomes"
-            title="A Better Bathroom Should Improve the Home Every Day"
+            title="Bathroom Goals"
           />
           <div className="grid gap-5 md:grid-cols-3">
             {["Better layout", "Improved comfort", "Cleaner, more current feel"].map((item) => (
@@ -47,12 +47,8 @@ export default function BathroomRemodelingPage() {
         <Container>
           <div className="surface-panel p-7">
             <p className="eyebrow">Bathroom CTA</p>
-            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92] text-navy">
-              Talk Through the Project and Get a Clearer Path Forward
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-muted">
-              We will help you start with the right conversation, not pressure.
-            </p>
+            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92] text-navy">Plan Your Bathroom Remodel</h2>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-muted">We will help you choose the right next step.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/contact">Start your bathroom remodel</ButtonLink>
               <ButtonLink href={contactInfo.phoneHref} variant="ghost">

@@ -7,7 +7,7 @@ export const companyName = "Jim's Roofing & Construction";
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://jims-roofing-construction.vercel.app";
 export const siteDescription =
-  "Roofing-first protection for homeowners in Pinckney and surrounding communities, backed by local accountability, recognized credentials, and a clear next step.";
+  "Roofing, siding, tree removal, and remodeling help for Pinckney-area homeowners from a GAF Master Elite, licensed and insured local contractor.";
 
 export const contactInfo = {
   phoneDisplay: "888-301-6335",
@@ -51,31 +51,28 @@ export const homeServiceCards = [
     eyebrow: "Flagship service",
     title: "Roofing",
     description:
-      "Roof replacement, repair, inspections, and storm-related help built around clear communication and durable work.",
+      "Roof replacement, repair, inspections, and storm-damage help.",
     accent: "Dominant"
   },
   {
     href: "/siding",
     eyebrow: "Exterior upgrade",
     title: "Siding",
-    description:
-      "Refresh curb appeal, strengthen weather protection, and make the home feel finished again.",
+    description: "New siding that improves curb appeal and weather protection.",
     accent: "Bright"
   },
   {
     href: "/tree-removal",
     eyebrow: "Safety first",
     title: "Tree Removal",
-    description:
-      "Protect the home, roofline, and driveway with a safety-focused approach to hazardous trees.",
+    description: "Safe removal for hazardous or storm-damaged trees near your home.",
     accent: "Grounded"
   },
   {
     href: "/additions",
     eyebrow: "Expanded living",
     title: "Additions & Remodeling",
-    description:
-      "Plan additions, kitchen updates, and bathroom remodels with one dependable local team.",
+    description: "Add space or update key rooms with one local team.",
     accent: "Support"
   }
 ];
@@ -84,26 +81,22 @@ export const processSteps = [
   {
     step: "01",
     title: "Inspect the project",
-    description:
-      "We look at the issue carefully, document what matters, and help you understand the condition of the home."
+    description: "We inspect the issue and tell you what we see."
   },
   {
     step: "02",
     title: "Explain the right scope",
-    description:
-      "You get a clear conversation about the best next step, whether that means repair, replacement, or a broader plan."
+    description: "You get a clear recommendation on the next step."
   },
   {
     step: "03",
     title: "Complete the work with care",
-    description:
-      "We show up prepared, respect the property, and keep communication straightforward while the job is underway."
+    description: "We show up prepared, protect the property, and get the job done."
   },
   {
     step: "04",
     title: "Walk it with you",
-    description:
-      "Before the project is considered done, we review the finished result and make sure you know what was completed."
+    description: "We review the finished work with you before we call it done."
   }
 ];
 
@@ -112,9 +105,9 @@ export const reviewSummary = {
   count: "5 ratings",
   countValue: 5,
   highlights: [
-    "Local homeowners already point to the company for responsive communication and dependable service.",
-    "The current linked review profile shows a 5.0 out of 5 rating, which gives the rebuild a strong trust anchor.",
-    "This site keeps that proof on-page instead of forcing visitors to leave before they feel confident."
+    "The linked review profile currently shows a 5.0 out of 5 rating.",
+    "Local homeowners point to responsive service and dependable work.",
+    "You can check reviews quickly before you call."
   ]
 };
 
@@ -185,73 +178,60 @@ export const seoKeywordMap = {
 export const homeFaqs = [
   {
     question: "Do you handle insurance-related work?",
-    answer:
-      "Yes. Insurance work is part of the current business positioning, and the site should make it easy to start that conversation early."
+    answer: "Yes. Call early if insurance is part of the project."
   },
   {
     question: "How do I know if I need a repair or a full replacement?",
-    answer:
-      "That starts with an inspection and a straightforward explanation. The goal is to help you understand the right scope before you commit."
+    answer: "Start with an inspection. We will tell you whether a repair or replacement makes more sense."
   },
   {
     question: "Can you inspect storm damage?",
-    answer:
-      "Yes. Storm-damage concerns are a core reason homeowners search for roofing help, so the site treats that as a first-class path."
+    answer: "Yes. Call as soon as you notice storm damage."
   },
   {
     question: "Do you only handle roofing projects?",
-    answer:
-      "Roofing leads the brand story, but the company also supports siding, tree removal, additions, remodeling, and crane-service needs."
+    answer: "No. We also handle siding, tree removal, additions, remodeling, and crane service."
   },
   {
     question: "What areas do you serve?",
-    answer:
-      "The current service-area copy includes Pinckney, Hamburg, Brighton, Dexter, Chelsea, Howell, Fowlerville, Livingston County, and Washtenaw County."
+    answer: "We serve Pinckney and nearby communities across Livingston and Washtenaw County."
   },
   {
     question: "How do I start with an estimate?",
-    answer:
-      "Use the estimate form or call directly. The fastest route is a short conversation about the issue, the property, and the next step."
+    answer: "Call us or use the estimate form and tell us what you need."
   }
 ];
 
 export const roofingFaqs = [
   {
     question: "How do I know if I need a repair or a replacement?",
-    answer:
-      "The right answer depends on the age of the roof, the extent of damage, and how much of the system is affected. Start with an inspection and a clear explanation."
+    answer: "It depends on the roof's age and damage. Start with an inspection and we will explain the best option."
   },
   {
     question: "Do you help with insurance-related roofing work?",
-    answer:
-      "Yes. Insurance-related projects are part of the service story, and they should be addressed early in the conversation."
+    answer: "Yes. Let us know early if insurance is involved."
   },
   {
     question: "How quickly can you inspect storm damage?",
-    answer:
-      "If storm damage is the concern, call as soon as possible so the problem can be evaluated before it worsens."
+    answer: "Call as soon as possible so we can look at it before it gets worse."
   },
   {
     question: "What should I expect from the estimate process?",
-    answer:
-      "Expect a practical conversation about what is going on, what the roof likely needs, and what the right next step looks like."
+    answer: "Expect a straightforward conversation about the problem, the scope, and the next step."
   }
 ];
 
 export const serviceAreaFaqs = [
   {
     question: "Do you work outside Pinckney?",
-    answer:
-      "Yes. The current service-area messaging covers nearby towns and broader county coverage in Livingston and Washtenaw."
+    answer: "Yes. We also serve nearby towns in Livingston and Washtenaw County."
   },
   {
     question: "What kinds of projects do you handle in these areas?",
-    answer:
-      "Roofing, siding, tree removal, additions, remodeling, and crane-service requests are all part of the route plan."
+    answer: "We handle roofing, siding, tree removal, additions, remodeling, and crane service."
   },
   {
     question: "Can I call if I am near the edge of the service area?",
-    answer:
-      "Yes. If you are nearby, the fastest way to confirm fit is a quick call."
+    answer: "Yes. A quick call is the fastest way to confirm coverage."
   }
 ];

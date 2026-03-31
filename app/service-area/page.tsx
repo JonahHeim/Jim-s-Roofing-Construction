@@ -37,21 +37,21 @@ export default function ServiceAreaPage() {
       />
       <ServiceHero
         bullets={serviceAreas.slice(0, 4)}
-        description="We proudly serve homeowners in Pinckney and surrounding communities with roofing, exterior work, and select home-improvement services."
+        description="Serving Pinckney and nearby communities with roofing and related services."
         eyebrow="Service area"
         primaryCta="See if we serve your area"
         primaryHref="/contact"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
-        title="Local Service for Pinckney and Nearby Michigan Communities"
+        title="Serving Pinckney and Nearby Communities"
       />
 
       <section className="section-space">
         <Container className="space-y-10">
           <SectionHeading
-            description="Group towns and counties clearly so the visitor can answer the service-area question in seconds."
+            description="Check our core coverage areas below."
             eyebrow="Coverage list"
-            title="Local Coverage Should Feel Concrete, Not Implied"
+            title="Coverage Areas"
           />
           <div className="surface-panel p-6">
             <div className="flex flex-wrap gap-3">
@@ -68,16 +68,14 @@ export default function ServiceAreaPage() {
       <section className="section-space bg-background-soft">
         <Container className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
           <div className="space-y-6">
-            <SectionHeading eyebrow="Service area FAQ" title="A Few Quick Answers Help Nearby Visitors Know Whether It Makes Sense to Call" />
+            <SectionHeading eyebrow="Service area FAQ" title="Service Area Questions" />
             <FAQAccordion items={serviceAreaFaqs} />
           </div>
           <div className="surface-dark rounded-panel p-7 text-white">
             <p className="eyebrow text-white/45">Service area CTA</p>
-            <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92]">
-              If Your Home Is In or Near Our Service Area, Let Us Talk Through the Project
-            </h3>
+            <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92]">Not Sure If We Cover Your Area?</h3>
             <p className="mt-5 text-base leading-7 text-white/75">
-              A quick call or estimate request can confirm fit and get you moving in the right direction.
+              Call or send an estimate request and we will confirm it quickly.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/contact">Request a free estimate</ButtonLink>

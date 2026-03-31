@@ -18,9 +18,9 @@ export default function ContactPage() {
         <Container className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <div className="space-y-7">
             <SectionHeading
-              description="The fastest way to move forward is a straightforward conversation about the property, the issue, and the kind of help you need."
+              description="Tell us about the project and we will help you with the next step."
               eyebrow="Contact hero"
-              title="Talk to Jim's Roofing & Construction Today"
+              title="Get in Touch"
             />
             <div className="surface-dark rounded-panel p-7 text-white">
               <p className="eyebrow text-white/45">Office details</p>
@@ -66,9 +66,9 @@ export default function ContactPage() {
           </div>
           <div className="space-y-6">
             <SectionHeading
-              description="A visible office location and clear credentials make the company feel real and accountable."
+              description="Local office, local service area, clear credentials."
               eyebrow="Map and trust"
-              title="A Local Business With a Physical Presence and a Clear Service Area"
+              title="Local and Easy to Reach"
             />
             <div className="grid gap-4">
               {["GAF Master Elite credential", "Licensed and insured", "Insurance work welcome"].map((item) => (

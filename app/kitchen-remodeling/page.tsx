@@ -17,21 +17,21 @@ export default function KitchenRemodelingPage() {
     <>
       <ServiceHero
         bullets={["Layout improvement", "Better daily function", "Value-focused upgrades"]}
-        description="A kitchen remodel should improve the way the home feels, functions, and supports daily life."
+        description="Kitchen updates that improve function, storage, and daily use."
         eyebrow="Kitchen remodeling"
         primaryCta="Plan your kitchen remodel"
         primaryHref="/contact"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
-        title="Build a Kitchen That Works Better Every Single Day"
+        title="Kitchen Remodeling That Works Better Every Day"
       />
 
       <section className="section-space">
         <Container className="space-y-10">
           <SectionHeading
-            description="Sell the remodel in terms of outcomes, not generic contractor phrases."
+            description="The improvements homeowners usually want most."
             eyebrow="Kitchen outcomes"
-            title="Turn the Kitchen Into a Better Daily Space"
+            title="Kitchen Goals"
           />
           <div className="grid gap-5 md:grid-cols-3">
             {["Better workflow", "Smarter storage", "A more finished, inviting space"].map((item) => (
@@ -47,12 +47,8 @@ export default function KitchenRemodelingPage() {
         <Container>
           <div className="surface-panel p-7">
             <p className="eyebrow">Kitchen CTA</p>
-            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92] text-navy">
-              Start Your Remodel With a Clear Conversation About the Space and Your Goals
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-muted">
-              We will help you turn ideas into a realistic next step.
-            </p>
+            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92] text-navy">Plan Your Kitchen Remodel</h2>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-muted">We will help you define the next step.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/contact">Plan your kitchen remodel</ButtonLink>
               <ButtonLink href={contactInfo.phoneHref} variant="ghost">
