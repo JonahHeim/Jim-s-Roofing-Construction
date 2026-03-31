@@ -21,6 +21,9 @@ export default function KitchenRemodelingPage() {
         eyebrow="Kitchen remodeling"
         primaryCta="Plan your kitchen remodel"
         primaryHref="/contact"
+        proofDescription="Use a finished kitchen photo with counters, cabinets, and lighting all visible. The image should feel bright, clean, and clearly lived-in rather than staged like a stock showroom."
+        proofEyebrow="Hero work-proof image"
+        proofTitle="Finished kitchen remodel"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Kitchen Remodeling That Works Better Every Day"

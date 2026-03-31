@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
+import { ProofImagePlaceholder } from "@/components/proof-image-placeholder";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceHero } from "@/components/service-hero";
 import { contactInfo } from "@/lib/site-data";
@@ -21,6 +22,9 @@ export default function SidingPage() {
         eyebrow="Siding"
         primaryCta="Schedule a siding consultation"
         primaryHref="/contact"
+        proofDescription="Use a wide exterior before-and-after or finished siding shot. Show color, trim lines, and enough of the house to make the upgrade obvious at a glance."
+        proofEyebrow="Hero work-proof image"
+        proofTitle="Finished siding upgrade"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Siding That Looks Better and Protects Better"
@@ -63,17 +67,26 @@ export default function SidingPage() {
               )}
             </ul>
           </div>
-          <div className="surface-dark rounded-panel p-7 text-white">
-            <p className="eyebrow text-white/45">Siding CTA</p>
-            <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92]">Schedule a Siding Consultation</h3>
-            <p className="mt-5 text-base leading-7 text-white/75">
-              Tell us what you want to update and we will talk through the next step.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">Schedule a siding consultation</ButtonLink>
-              <ButtonLink href={contactInfo.phoneHref} variant="secondary">
-                Call {contactInfo.phoneDisplay}
-              </ButtonLink>
+          <div className="space-y-4">
+            <ProofImagePlaceholder
+              className="min-h-[19rem]"
+              description="This is a strong spot for a before-and-after exterior angle showing new siding, trim, and a cleaner finished look."
+              eyebrow="Secondary proof slot"
+              tags={["Before / after", "Trim detail", "Street view"]}
+              title="Siding transformation"
+            />
+            <div className="surface-dark rounded-panel p-7 text-white">
+              <p className="eyebrow text-white/45">Siding CTA</p>
+              <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92]">Schedule a Siding Consultation</h3>
+              <p className="mt-5 text-base leading-7 text-white/75">
+                Tell us what you want to update and we will talk through the next step.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <ButtonLink href="/contact">Schedule a siding consultation</ButtonLink>
+                <ButtonLink href={contactInfo.phoneHref} variant="secondary">
+                  Call {contactInfo.phoneDisplay}
+                </ButtonLink>
+              </div>
             </div>
           </div>
         </Container>

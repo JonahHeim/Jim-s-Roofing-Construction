@@ -1,5 +1,6 @@
 import { ButtonLink } from "./button-link";
 import { Container } from "./container";
+import { ProofImagePlaceholder } from "./proof-image-placeholder";
 
 type ServiceHeroProps = {
   eyebrow: string;
@@ -10,6 +11,9 @@ type ServiceHeroProps = {
   primaryHref: string;
   secondaryCta?: string;
   secondaryHref?: string;
+  proofEyebrow: string;
+  proofTitle: string;
+  proofDescription: string;
 };
 
 export function ServiceHero({
@@ -20,7 +24,10 @@ export function ServiceHero({
   primaryCta,
   primaryHref,
   secondaryCta,
-  secondaryHref
+  secondaryHref,
+  proofEyebrow,
+  proofTitle,
+  proofDescription
 }: ServiceHeroProps) {
   return (
     <section className="hero-surface py-20 text-white lg:py-24">
@@ -41,16 +48,15 @@ export function ServiceHero({
           </div>
         </div>
 
-        <div className="surface-dark rounded-hero border border-white/10 p-6 shadow-strong">
-          <p className="eyebrow text-white/55">On this page</p>
-          <ul className="mt-4 space-y-4">
-            {bullets.map((bullet) => (
-              <li className="flex gap-3" key={bullet}>
-                <span className="mt-1 h-2.5 w-2.5 rounded-full bg-gold" />
-                <span className="text-base leading-7 text-white/80">{bullet}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="space-y-4">
+          <ProofImagePlaceholder
+            className="min-h-[23rem]"
+            description={proofDescription}
+            eyebrow={proofEyebrow}
+            tags={bullets}
+            theme="dark"
+            title={proofTitle}
+          />
         </div>
       </Container>
     </section>

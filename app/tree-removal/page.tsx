@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
+import { ProofImagePlaceholder } from "@/components/proof-image-placeholder";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceHero } from "@/components/service-hero";
 import { contactInfo } from "@/lib/site-data";
@@ -21,6 +22,9 @@ export default function TreeRemovalPage() {
         eyebrow="Tree removal"
         primaryCta="Talk to us about tree removal"
         primaryHref="/contact"
+        proofDescription="Use a dramatic but clear job photo: tree overhang, tight access near a house, or a finished removal with the property protected. The house should stay visible in frame."
+        proofEyebrow="Hero work-proof image"
+        proofTitle="Hazard tree removal"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Safe Tree Removal for High-Risk Situations"
@@ -57,17 +61,27 @@ export default function TreeRemovalPage() {
               ))}
             </ul>
           </div>
-          <div className="surface-dark rounded-panel p-7 text-white">
-            <p className="eyebrow text-white/45">Tree removal CTA</p>
-            <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92]">Talk to Us Before It Gets Worse</h3>
-            <p className="mt-5 text-base leading-7 text-white/75">
-              If a tree is threatening the property, call now.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <ButtonLink href="/contact">Talk to us about tree removal</ButtonLink>
-              <ButtonLink href={contactInfo.phoneHref} variant="secondary">
-                Call {contactInfo.phoneDisplay}
-              </ButtonLink>
+          <div className="space-y-4">
+            <ProofImagePlaceholder
+              className="min-h-[19rem]"
+              description="Use a photo that shows the tree hazard in relation to the house, roofline, or driveway. This works best when the risk is obvious in one frame."
+              eyebrow="Secondary proof slot"
+              tags={["Risk near home", "Equipment in frame", "Protected property"]}
+              title="Tree risk before removal"
+              theme="dark"
+            />
+            <div className="surface-dark rounded-panel p-7 text-white">
+              <p className="eyebrow text-white/45">Tree removal CTA</p>
+              <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92]">Talk to Us Before It Gets Worse</h3>
+              <p className="mt-5 text-base leading-7 text-white/75">
+                If a tree is threatening the property, call now.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <ButtonLink href="/contact">Talk to us about tree removal</ButtonLink>
+                <ButtonLink href={contactInfo.phoneHref} variant="secondary">
+                  Call {contactInfo.phoneDisplay}
+                </ButtonLink>
+              </div>
             </div>
           </div>
         </Container>

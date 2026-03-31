@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
 import { FAQAccordion } from "@/components/faq-accordion";
+import { ProofImagePlaceholder } from "@/components/proof-image-placeholder";
 import { SectionHeading } from "@/components/section-heading";
 import { createPageMetadata } from "@/lib/seo";
 import {
@@ -80,35 +81,27 @@ export default function HomePage() {
           </div>
 
           <div className="space-y-5">
-            <div className="surface-dark rounded-hero border border-white/10 p-6 shadow-strong sm:p-7">
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-card border border-white/10 bg-white/5 p-5">
-                  <p className="eyebrow text-white/45">Credential</p>
-                  <p className="mt-3 font-display text-3xl uppercase leading-none text-white">GAF Master Elite</p>
-                  <p className="mt-3 text-sm leading-6 text-white/70">Recognized roofing credentials you can verify.</p>
-                </div>
-                <div className="rounded-card border border-white/10 bg-white/5 p-5">
-                  <p className="eyebrow text-white/45">Local proof</p>
-                  <p className="mt-3 font-display text-3xl uppercase leading-none text-white">20+ Years</p>
-                  <p className="mt-3 text-sm leading-6 text-white/70">Serving Pinckney and nearby communities.</p>
-                </div>
+            <ProofImagePlaceholder
+              className="min-h-[28rem]"
+              description="Use a real finished roofing photo with the full house in frame. Best choice: a strong front-angle daylight shot that shows clean lines, fresh materials, and obvious curb-appeal impact."
+              eyebrow="Hero work-proof image"
+              tags={["Finished roof", "House in frame", "Daylight shot"]}
+              theme="dark"
+              title="Featured roof project"
+            />
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="rounded-card border border-white/10 bg-white/10 p-5 backdrop-blur">
+                <p className="eyebrow text-white/45">Credential</p>
+                <p className="mt-3 font-display text-3xl uppercase leading-none text-white">GAF Master Elite</p>
               </div>
-
-              <div className="mt-4 rounded-card border border-[color:rgba(234,195,54,0.25)] bg-[color:rgba(234,195,54,0.1)] p-5">
-                <div className="flex flex-wrap items-end justify-between gap-3">
-                  <div>
-                    <p className="eyebrow text-white/45">Review signal</p>
-                    <p className="mt-2 font-display text-4xl uppercase leading-none text-white">
-                      {reviewSummary.rating} / 5
-                    </p>
-                  </div>
-                  <a className="text-sm font-semibold text-gold" href={contactInfo.reviewHref} rel="noreferrer" target="_blank">
-                    Read reviews
-                  </a>
-                </div>
-                <p className="mt-3 text-sm leading-6 text-white/72">
-                  The linked review profile currently shows {reviewSummary.count}.
-                </p>
+              <div className="rounded-card border border-white/10 bg-white/10 p-5 backdrop-blur">
+                <p className="eyebrow text-white/45">Local proof</p>
+                <p className="mt-3 font-display text-3xl uppercase leading-none text-white">20+ Years</p>
+              </div>
+              <div className="rounded-card border border-[color:rgba(234,195,54,0.25)] bg-[color:rgba(234,195,54,0.14)] p-5 backdrop-blur">
+                <p className="eyebrow text-white/45">Reviews</p>
+                <p className="mt-3 font-display text-3xl uppercase leading-none text-white">{reviewSummary.rating} / 5</p>
+                <p className="mt-2 text-sm text-white/70">{reviewSummary.count}</p>
               </div>
             </div>
           </div>
@@ -168,6 +161,36 @@ export default function HomePage() {
                 </span>
               </a>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-space">
+        <Container className="space-y-10">
+          <SectionHeading
+            description="Real job photos should do more of the selling than generic backgrounds."
+            eyebrow="Work proof"
+            title="Best Places for Real Project Images"
+          />
+          <div className="grid gap-5 lg:grid-cols-3">
+            <ProofImagePlaceholder
+              description="Use a completed front-elevation shot that makes the roof replacement obvious from the street."
+              eyebrow="Homepage proof slot"
+              tags={["After photo", "Curb appeal", "Full roofline"]}
+              title="Roof replacement after"
+            />
+            <ProofImagePlaceholder
+              description="Use an in-progress or after photo that shows storm response work on a real home."
+              eyebrow="Homepage proof slot"
+              tags={["Storm repair", "Real home", "Visible damage solved"]}
+              title="Storm damage repair"
+            />
+            <ProofImagePlaceholder
+              description="Use a siding or exterior refresh photo that adds variety while still showing finished workmanship."
+              eyebrow="Homepage proof slot"
+              tags={["Siding upgrade", "Exterior detail", "Before / after"]}
+              title="Exterior upgrade"
+            />
           </div>
         </Container>
       </section>

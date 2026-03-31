@@ -41,6 +41,9 @@ export default function ServiceAreaPage() {
         eyebrow="Service area"
         primaryCta="See if we serve your area"
         primaryHref="/contact"
+        proofDescription="Use a branded truck, jobsite, or completed exterior photo that ties the company to local neighborhoods. This image should make the service area feel real and nearby."
+        proofEyebrow="Hero work-proof image"
+        proofTitle="Local project in service area"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Serving Pinckney and Nearby Communities"

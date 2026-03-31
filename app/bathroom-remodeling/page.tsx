@@ -21,6 +21,9 @@ export default function BathroomRemodelingPage() {
         eyebrow="Bathroom remodeling"
         primaryCta="Start your bathroom remodel"
         primaryHref="/contact"
+        proofDescription="Use a finished bathroom image with tile, vanity, and fixtures visible in one frame. Best choice: a clean angle that makes the upgrade feel tangible right away."
+        proofEyebrow="Hero work-proof image"
+        proofTitle="Finished bathroom remodel"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Bathroom Remodeling That Feels Better to Use"

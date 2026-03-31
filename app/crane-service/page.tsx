@@ -21,6 +21,9 @@ export default function CraneServicePage() {
         eyebrow="Crane service"
         primaryCta="Ask about crane service"
         primaryHref="/contact"
+        proofDescription="Use a real crane setup photo with the equipment, load path, and worksite context visible. The shot should immediately signal scale and control."
+        proofEyebrow="Hero work-proof image"
+        proofTitle="Crane-assisted project"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Crane Support for Specialized Jobs"

@@ -21,6 +21,9 @@ export default function AdditionsPage() {
         eyebrow="Additions"
         primaryCta="Start your additions conversation"
         primaryHref="/contact"
+        proofDescription="Use an exterior or interior shot that makes the added space obvious. Best fit: completed room addition, expanded living area, or a before-and-after angle from the same position."
+        proofEyebrow="Hero work-proof image"
+        proofTitle="Completed addition"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Add Space That Fits the Way You Live"

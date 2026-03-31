@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
 import { FAQAccordion } from "@/components/faq-accordion";
+import { ProofImagePlaceholder } from "@/components/proof-image-placeholder";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceHero } from "@/components/service-hero";
 import { contactInfo, roofingFaqs } from "@/lib/site-data";
@@ -42,6 +43,9 @@ export default function RoofingPage() {
         eyebrow="Roofing"
         primaryCta="Book a roofing estimate"
         primaryHref="/contact"
+        proofDescription="Use a real roof replacement or repair photo with the full front elevation visible. Best choice: a clean daylight shot that shows shingles, roofline detail, and obvious finished quality."
+        proofEyebrow="Hero work-proof image"
+        proofTitle="Completed roof replacement"
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Roofing You Can Count On"
@@ -89,6 +93,33 @@ export default function RoofingPage() {
       </section>
 
       <section className="section-space bg-background-soft">
+        <Container className="space-y-10">
+          <SectionHeading
+            description="Roofing is the clearest place to prove the work with real project photos."
+            eyebrow="Work-proof gallery"
+            title="High-Impact Roofing Photo Slots"
+          />
+          <div className="grid gap-5 lg:grid-cols-2">
+            <ProofImagePlaceholder
+              className="min-h-[22rem]"
+              description="Best fit: a finished replacement shot from the driveway or street, with the roofline, house shape, and material upgrade all visible in one frame."
+              eyebrow="Roofing proof slot"
+              tags={["After photo", "Front elevation", "Finished shingles"]}
+              title="Completed roof replacement"
+            />
+            <ProofImagePlaceholder
+              className="min-h-[22rem]"
+              description="Best fit: a storm-damage or repair image that shows the problem clearly, then the corrected result. Real condition photos build trust fast here."
+              eyebrow="Roofing proof slot"
+              tags={["Storm damage", "Repair in progress", "Before / after"]}
+              title="Storm repair proof"
+              theme="dark"
+            />
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-space">
         <Container className="grid gap-5 lg:grid-cols-4">
           {[
             "GAF Master Elite status",
