@@ -1,0 +1,85 @@
+import type { Metadata } from "next";
+import { ButtonLink } from "@/components/button-link";
+import { Container } from "@/components/container";
+import { SectionHeading } from "@/components/section-heading";
+import { ServiceHero } from "@/components/service-hero";
+import { contactInfo } from "@/lib/site-data";
+
+export const metadata: Metadata = {
+  title: "Siding",
+  description: "Siding consultation and installation support from Jim's Roofing & Construction."
+};
+
+export default function SidingPage() {
+  return (
+    <>
+      <ServiceHero
+        bullets={["Improved curb appeal", "Better weather protection", "Potential energy-efficiency gains"]}
+        description="New siding can improve appearance, improve weather protection, and help the home feel finished again."
+        eyebrow="Siding"
+        primaryCta="Schedule a siding consultation"
+        primaryHref="/contact"
+        secondaryCta={`Call ${contactInfo.phoneDisplay}`}
+        secondaryHref={contactInfo.phoneHref}
+        title="Upgrade Curb Appeal and Protection With New Siding"
+      />
+
+      <section className="section-space">
+        <Container className="space-y-10">
+          <SectionHeading
+            description="Siding is not just cosmetic. It changes how the home performs and how it feels to come home to it."
+            eyebrow="Benefits"
+            title="Make the Upgrade Feel Practical as Well as Visual"
+          />
+          <div className="grid gap-5 md:grid-cols-3">
+            {[
+              "Freshen the look of the home",
+              "Strengthen exterior protection",
+              "Support efficiency and comfort"
+            ].map((item) => (
+              <div className="surface-card p-6" key={item}>
+                <p className="text-xl font-semibold leading-8 text-foreground">{item}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-space bg-background-soft">
+        <Container className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
+          <div className="surface-panel p-7">
+            <p className="eyebrow">Scope</p>
+            <h2 className="mt-4 font-display text-5xl uppercase leading-[0.92] text-navy">
+              A Clearer Explanation of What This Service Actually Covers
+            </h2>
+            <ul className="mt-6 space-y-4 text-base leading-7 text-muted">
+              {["Siding replacement", "Material guidance", "Project walkthrough and estimate", "Clear expectations on next steps"].map(
+                (item) => (
+                  <li className="flex gap-3" key={item}>
+                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" />
+                    <span>{item}</span>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+          <div className="surface-dark rounded-panel p-7 text-white">
+            <p className="eyebrow text-white/45">Siding CTA</p>
+            <h3 className="mt-4 font-display text-4xl uppercase leading-[0.92]">
+              Start With a Consultation and a Clear Idea of What Your Home Needs
+            </h3>
+            <p className="mt-5 text-base leading-7 text-white/75">
+              If the siding is worn, dated, or underperforming, let us help you plan the right upgrade.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <ButtonLink href="/contact">Schedule a siding consultation</ButtonLink>
+              <ButtonLink href={contactInfo.phoneHref} variant="secondary">
+                Call {contactInfo.phoneDisplay}
+              </ButtonLink>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </>
+  );
+}
