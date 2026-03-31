@@ -27,6 +27,7 @@ export default function CraneServicePage() {
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Crane Support for Specialized Jobs"
+        variant="editorial"
       />
 
       <section className="section-space">

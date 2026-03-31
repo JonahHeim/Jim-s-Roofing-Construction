@@ -27,6 +27,7 @@ export default function AdditionsPage() {
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Add Space That Fits the Way You Live"
+        variant="stacked"
       />
 
       <section className="section-space">

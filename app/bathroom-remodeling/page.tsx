@@ -27,6 +27,7 @@ export default function BathroomRemodelingPage() {
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Bathroom Remodeling That Feels Better to Use"
+        variant="stacked"
       />
 
       <section className="section-space">

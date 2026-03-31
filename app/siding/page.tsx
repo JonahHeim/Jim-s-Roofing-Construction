@@ -28,6 +28,7 @@ export default function SidingPage() {
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Siding That Looks Better and Protects Better"
+        variant="editorial"
       />
 
       <section className="section-space">

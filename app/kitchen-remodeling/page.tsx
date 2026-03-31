@@ -27,6 +27,7 @@ export default function KitchenRemodelingPage() {
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Kitchen Remodeling That Works Better Every Day"
+        variant="stacked"
       />
 
       <section className="section-space">

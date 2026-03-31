@@ -47,6 +47,7 @@ export default function ServiceAreaPage() {
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Serving Pinckney and Nearby Communities"
+        variant="editorial"
       />
 
       <section className="section-space">

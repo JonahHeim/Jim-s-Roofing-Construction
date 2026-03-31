@@ -28,6 +28,7 @@ export default function TreeRemovalPage() {
         secondaryCta={`Call ${contactInfo.phoneDisplay}`}
         secondaryHref={contactInfo.phoneHref}
         title="Safe Tree Removal for High-Risk Situations"
+        variant="editorial"
       />
 
       <section className="section-space">
