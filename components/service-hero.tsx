@@ -1,6 +1,7 @@
 import { ButtonLink } from "./button-link";
 import { Container } from "./container";
 import { ProofImagePlaceholder } from "./proof-image-placeholder";
+import { Reveal } from "./reveal";
 
 type ServiceHeroProps = {
   eyebrow: string;
@@ -32,7 +33,7 @@ export function ServiceHero({
   return (
     <section className="hero-surface py-20 text-white lg:py-24">
       <Container className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-        <div className="space-y-7">
+        <Reveal className="space-y-7" delay={20}>
           <p className="eyebrow text-white/60">{eyebrow}</p>
           <h1 className="font-display text-5xl uppercase leading-[0.9] sm:text-6xl lg:text-7xl">
             {title}
@@ -46,9 +47,9 @@ export function ServiceHero({
               </ButtonLink>
             ) : null}
           </div>
-        </div>
+        </Reveal>
 
-        <div className="space-y-4">
+        <Reveal className="space-y-4" delay={120}>
           <ProofImagePlaceholder
             className="min-h-[23rem]"
             description={proofDescription}
@@ -57,7 +58,7 @@ export function ServiceHero({
             theme="dark"
             title={proofTitle}
           />
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

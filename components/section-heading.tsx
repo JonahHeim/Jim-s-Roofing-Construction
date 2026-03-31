@@ -1,3 +1,5 @@
+import { Reveal } from "./reveal";
+
 type SectionHeadingProps = {
   eyebrow?: string;
   title: string;
@@ -14,7 +16,7 @@ export function SectionHeading({
   const alignment = align === "center" ? "mx-auto text-center" : "";
 
   return (
-    <div className={`max-w-reading space-y-3 ${alignment}`}>
+    <Reveal className={`max-w-reading space-y-3 ${alignment}`} delay={70}>
       {eyebrow ? (
         <p className="eyebrow">{eyebrow}</p>
       ) : null}
@@ -24,6 +26,6 @@ export function SectionHeading({
       {description ? (
         <p className="text-base leading-7 text-muted sm:text-lg">{description}</p>
       ) : null}
-    </div>
+    </Reveal>
   );
 }

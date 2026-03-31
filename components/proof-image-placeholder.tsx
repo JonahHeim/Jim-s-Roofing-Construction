@@ -19,7 +19,7 @@ export function ProofImagePlaceholder({
 
   return (
     <div
-      className={`proof-placeholder ${isDark ? "proof-placeholder-dark" : "proof-placeholder-light"} ${className}`.trim()}
+      className={`proof-placeholder motion-card ${isDark ? "proof-placeholder-dark" : "proof-placeholder-light"} ${className}`.trim()}
     >
       <div className="proof-placeholder-grid" />
       <div className="proof-placeholder-focus" />

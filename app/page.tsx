@@ -3,6 +3,7 @@ import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
 import { FAQAccordion } from "@/components/faq-accordion";
 import { ProofImagePlaceholder } from "@/components/proof-image-placeholder";
+import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { createPageMetadata } from "@/lib/seo";
 import {
@@ -49,7 +50,7 @@ export default function HomePage() {
       />
       <section className="hero-surface overflow-hidden py-20 text-white lg:py-28">
         <Container className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
-          <div className="space-y-8">
+          <Reveal className="space-y-8" delay={20}>
             <p className="eyebrow text-white/60">GAF Master Elite roofing in Pinckney</p>
             <div className="space-y-5">
               <h1 className="max-w-4xl font-display text-5xl uppercase leading-[0.88] sm:text-6xl lg:text-7xl">
@@ -78,9 +79,9 @@ export default function HomePage() {
                 </span>
               ))}
             </div>
-          </div>
+          </Reveal>
 
-          <div className="space-y-5">
+          <Reveal className="space-y-5" delay={120}>
             <ProofImagePlaceholder
               className="min-h-[28rem]"
               description="Use a real finished roofing photo with the full house in frame. Best choice: a strong front-angle daylight shot that shows clean lines, fresh materials, and obvious curb-appeal impact."
@@ -104,7 +105,7 @@ export default function HomePage() {
                 <p className="mt-2 text-sm text-white/70">{reviewSummary.count}</p>
               </div>
             </div>
-          </div>
+          </Reveal>
         </Container>
       </section>
 
